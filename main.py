@@ -48,7 +48,6 @@ def decrypt(key,filename):
 
 def getKey(password):
 	hasher=SHA256.new(password.encode('utf-8'))
-	print hasher
 	return hasher.digest()
 
 def Main():
